@@ -48,8 +48,17 @@ VALUES
 
 -- uc-4
 -- To go to the database created
-USE payroll_service
+USE address_book
 
 -- Update the record
 UPDATE address SET City = 'Trisur', State = 'Kerala'
 WHERE FirstName = 'Ravi';
+
+---------------------------------------------------------------
+
+-- uc-5
+-- To go to the database created
+USE address_book
+
+-- To delete particular records from table
+DELETE FROM address WHERE FirstName='Asha'
