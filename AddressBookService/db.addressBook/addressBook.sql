@@ -44,4 +44,12 @@ VALUES
 ('Porvi','Shetty','2nd cros Rajaji Nagar','Banglore','Andra','80453','0987654321','porvi@gmail.com'),
 ('Raja','M','2nd cros Rajaji Nagar','Gadag','Andra','80453','0987654321','raja@gmail.com');
 
+---------------------------------------------------------------
 
+-- uc-4
+-- To go to the database created
+USE payroll_service
+
+-- Update the record
+UPDATE address SET City = 'Trisur', State = 'Kerala'
+WHERE FirstName = 'Ravi';
