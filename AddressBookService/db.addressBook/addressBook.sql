@@ -80,3 +80,12 @@ USE address_book
 
 -- To retrieve count of specific records
 SELECT COUNT(FirstName) AS CountByCityState FROM address WHERE City = 'Bangalore' AND State = 'Karnataka';
+
+---------------------------------------------------------------
+
+-- uc-8
+-- To go to the database created
+USE address_book
+
+-- To retrieve specific records in order
+SELECT * FROM address WHERE City = 'Bangalore' ORDER BY FirstName;
