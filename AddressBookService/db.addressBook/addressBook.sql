@@ -70,4 +70,13 @@ DELETE FROM address WHERE FirstName='Asha'
 USE address_book
 
 -- To retrieve specific records
-SELECT FirstName FROM address WHERE City = 'Bangalore' OR State = 'Karnataka'
+SELECT FirstName FROM address WHERE City = 'Bangalore' OR State = 'Karnataka';
+
+---------------------------------------------------------------
+
+-- uc-7
+-- To go to the database created
+USE address_book
+
+-- To retrieve count of specific records
+SELECT COUNT(FirstName) AS CountByCityState FROM address WHERE City = 'Bangalore' AND State = 'Karnataka';
