@@ -103,3 +103,14 @@ ALTER TABLE address ADD BookName VARCHAR(20), BookType VARCHAR(10);
 UPDATE address SET BookName='Book1', BookType='Friends' WHERE FirstName='Rahul' OR FirstName='Ravi';
 UPDATE address SET BookName='Book2', BookType='Family' WHERE FirstName='Porvi';
 UPDATE address SET BookName='Book3', BookType='Profession' WHERE FirstName='Raja';
+
+---------------------------------------------------------------
+
+-- uc-10
+-- To go to the database created
+USE address_book
+
+-- To retrieve count of specific records
+SELECT COUNT(BookType) AS AddressCount, BookType FROM address WHERE BookType='Friends' GROUP BY BookType;
+SELECT COUNT(BookType) AS AddressCount, BookType FROM address WHERE BookType='Family' GROUP BY BookType;
+SELECT COUNT(BookType) AS AddressCount, BookType FROM address WHERE BookType='Profession' GROUP BY BookType;
