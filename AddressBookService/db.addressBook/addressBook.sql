@@ -114,3 +114,15 @@ USE address_book
 SELECT COUNT(BookType) AS AddressCount, BookType FROM address WHERE BookType='Friends' GROUP BY BookType;
 SELECT COUNT(BookType) AS AddressCount, BookType FROM address WHERE BookType='Family' GROUP BY BookType;
 SELECT COUNT(BookType) AS AddressCount, BookType FROM address WHERE BookType='Profession' GROUP BY BookType;
+
+---------------------------------------------------------------
+
+-- uc-11
+-- To go to the database created
+USE address_book
+
+-- To insert into the table created
+INSERT INTO address(FirstName, LastName, Address, City, State, Zip, PhoneNumber, Email, BookName, BookType) 
+VALUES
+('Anand','Kumar','#22 !st Cross','Tinsukia','Assam',785575,'8748892361','anand@gmail.com','Book2','Family'),
+('Anand','Kumar','#22 !st Cross','Tinsukia','Assam',785575,'8748892361','anand@gmail.com','Book1','Friends');
