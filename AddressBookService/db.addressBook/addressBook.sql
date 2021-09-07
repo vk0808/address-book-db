@@ -89,3 +89,17 @@ USE address_book
 
 -- To retrieve specific records in order
 SELECT * FROM address WHERE City = 'Bangalore' ORDER BY FirstName;
+
+---------------------------------------------------------------
+
+-- uc-9
+-- To go to the database created
+USE address_book
+
+-- To alter table by adding new columns
+ALTER TABLE address ADD BookName VARCHAR(20), BookType VARCHAR(10);
+
+-- To update table
+UPDATE address SET BookName='Book1', BookType='Friends' WHERE FirstName='Rahul' OR FirstName='Ravi';
+UPDATE address SET BookName='Book2', BookType='Family' WHERE FirstName='Porvi';
+UPDATE address SET BookName='Book3', BookType='Profession' WHERE FirstName='Raja';
